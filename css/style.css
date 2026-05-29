@@ -1,13 +1,82 @@
 @charset "utf-8";
 
-@media ((min-width: 400px)) and (max-width: 659px) {
+    * {
+        font-family: monospace;
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    header {
+        background-color: rgb(46, 46, 46);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 20px
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    article {
+        height: auto;
+        flex: 1 1 330px;
+        max-width: 620px;
+    }
+
+    #logo {
+        color: white;
+        margin: 10px 10px 10px 10px;
+        align-self: center;
+        flex: 1;
+    }
+
+    #titulo {
+        text-align: center;
+        margin: 30px  0 30px 0;
+        font-size: 20px;
+    }
+
+    .legenda {
+        font-size: 15px;
+        color: rgb(201, 200, 200);
+    }
+
+@media ((min-width: 400px)) and (max-width: 670px) {
     
     * {
         font-family: monospace;
     }
 
     body {
-        position: fixed;
         top: 0;
         left: 0;
         margin: 0;
@@ -34,7 +103,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-        margin: 20px
+        margin: 20px 20px 20px 0;
     }
     
     li {
@@ -55,6 +124,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .legenda {
@@ -64,7 +135,7 @@
 
     #logo {
         color: white;
-        margin: 10px;
+        margin: 20px;
         align-self: center;
         font-size: 50px;
         flex: 1;
@@ -76,62 +147,4 @@
         font-size: 20px;
     }
 
-}
-
-@media (min-width: 660px) {
-
-    * {
-        font-family: monospace;
-    }
-
-    body {
-        background-color: rgb(247, 105, 105);
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-    }
-
-    header {
-        background-color: rgb(46, 46, 46);
-        color: white;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #logo {
-        color: white;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 30px;
-        margin: 20px
-    }
-
-
-    #titulo {
-        text-align: center;
-    }
-
-    img {
-        width: 250px;
-    }
-
-    figcaption {
-        text-align: center;
-    }
-
-    section {
-        display: flex;
-        flex-wrap: wrap;;
-        justify-content: space-around;
-    }
 }
